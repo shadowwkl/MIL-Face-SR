@@ -1,0 +1,32 @@
+# Config file for CelebA dataset (200k)
+
+# output_dir: '/data/hzh/checkpoints/StyleGAN.pytorch/ckp_celeba_12'
+# structure: 'linear'
+# device_id: ('1')
+# checkpoint_factor: 2
+# loss: 'logistic'
+# dataset:
+#   img_dir: '/home/hzh/data/CelebA'
+#   folder: False
+#   resolution: 128
+# sched:
+#   epochs: [4,4,8,16,16,32]
+
+
+output_dir: './output/exp_name'
+structure: 'fixed'
+# device_id: ('0')
+feedback_factor: 25
+checkpoint_factor: 25
+loss: 'logistic'
+dataset:
+  img_dir: './data/celeba_128_list.txt'
+  folder: False
+  resolution: 128
+# sched:
+#     epochs: [4,4,8,16,16,32,64]
+loss_weight:
+  w_id: 1.0
+  w_lrRecon: 10
+  w_ssim: 0.0
+  w_adv: 5
