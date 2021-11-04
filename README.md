@@ -13,4 +13,5 @@ Given a really low-resolution input image of a face (say 16x16 or 8x8 pixels), t
 >
 ## Implementation
 Train the model:
+>
 python3 ./train.py --config ./configs/config.yaml --train
