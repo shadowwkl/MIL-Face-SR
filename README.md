@@ -13,6 +13,7 @@ Given a really low-resolution input image of a face (say 16x16 or 8x8 pixels), t
 >
 ## Implementation
 Credit: Our implementation is based and modifies the work from Zhonghao Huang, a pytorch implementation of style GAN.
+>
 Train the model:
 >
 python3 ./train.py --config ./configs/config.yaml --train
